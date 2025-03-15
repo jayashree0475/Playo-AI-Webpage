@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,78 +14,112 @@
             color: white;
         }
         h1 { text-align: center; margin-bottom: 40px; }
-        .container { 
-            max-width: 1000px; 
-            margin: auto; 
-            background: rgba(0, 0, 0, 0.7); 
-            padding: 30px; 
-            border-radius: 10px; 
-        }
+        .container { max-width: 1000px; margin: auto; background: rgba(0, 0, 0, 0.8); padding: 30px; border-radius: 10px; }
         .section { margin-bottom: 40px; }
-        .section h2 { color: #ffd700; }
+        .section h2 { color: #ffd700; margin-bottom: 10px; }
+        .problem { font-size: 18px; margin-bottom: 10px; }
+        .dropdown-btn { background-color: #ffd700; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-bottom: 15px; font-weight: bold; }
+        .dropdown-content { display: none; margin-top: 15px; background: rgba(255, 255, 255, 0.9); color: black; padding: 20px; border-radius: 8px; }
         .flowchart { text-align: center; margin: 20px 0; }
-        .flowchart img { max-width: 60%; height: auto; border-radius: 10px; border: 3px solid #fff; }
-        ul { line-height: 1.8; margin-left: 20px; }
-        li { margin-bottom: 10px; }
+        .flowchart img { max-width: 50%; height: auto; border-radius: 10px; border: 3px solid #fff; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>AI-Driven Solutions for Playo</h1>
 
-        <div class="section"><h2>1. Personalized Player Matching using AI</h2>
-            <ul>
-                <li>AI models analyze user profiles, playing history, skill level, and preferences.</li>
-                <li>Recommends players of similar skill sets for a better match experience.</li>
-                <li>Machine learning continuously improves matching accuracy based on feedback.</li>
-            </ul>
+        <!-- Section Template Example -->
+        <div class="section">
+            <h2>1. Personalized Player Matching using AI</h2>
+            <p class="problem">Problem: Users struggle to find players of similar skill level and availability, making it difficult to enjoy balanced games.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">What can be done?</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>AI models analyze user profiles, playing history, and preferences to suggest ideal partners.</li>
+                    <li>Machine learning continuously improves matching based on feedback and outcomes.</li>
+                    <li>Only AI can process large data dynamically and suggest real-time, high-quality matches.</li>
+                </ul>
+            </div>
             <div class="flowchart"><img src="personalized_player.jpg" alt="Player Matching AI"></div>
         </div>
 
-        <div class="section"><h2>2. AI-driven Demand Forecasting for Slots</h2>
-            <ul>
-                <li>Analyzes booking patterns and predicts high-demand times.</li>
-                <li>Optimizes court allocation and prevents overbooking.</li>
-                <li>Provides real-time slot availability recommendations to users.</li>
-            </ul>
+        <div class="section">
+            <h2>2. AI-driven Demand Forecasting for Slots</h2>
+            <p class="problem">Problem: Peak hour bookings are often full, while many slots remain underutilized during off-peak times.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">What can be done?</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>AI forecasts demand trends to optimize court availability and avoid overbooking.</li>
+                    <li>It helps Playo balance peak and non-peak slots efficiently.</li>
+                    <li>AI enables accurate and continuous analysis that simple scheduling cannot achieve.</li>
+                </ul>
+            </div>
             <div class="flowchart"><img src="demand_forecasting.jpg" alt="Demand Forecasting"></div>
         </div>
 
-        <div class="section"><h2>3. Dynamic Pricing Models to Optimize Revenue</h2>
-            <ul>
-                <li>AI-based dynamic pricing adjusts rates based on demand and time.</li>
-                <li>Encourages bookings in off-peak hours through discounts.</li>
-                <li>Maximizes revenue during high-demand periods with surge pricing.</li>
-            </ul>
+        <div class="section">
+            <h2>3. Dynamic Pricing Models to Optimize Revenue</h2>
+            <p class="problem">Problem: Fixed pricing doesn't encourage bookings during off-peak hours and misses revenue opportunities during high demand.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">What can be done?</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>AI adjusts pricing dynamically based on demand, day, and time.</li>
+                    <li>Optimizes revenue using discounts and surge pricing strategies.</li>
+                    <li>AI allows real-time price optimization that manual methods can't handle effectively.</li>
+                </ul>
+            </div>
             <div class="flowchart"><img src="Dynamic_Pricing.jpg" alt="Dynamic Pricing"></div>
         </div>
 
-        <div class="section"><h2>4. Cancellation Prediction & Slot Backfilling</h2>
-            <ul>
-                <li>AI predicts potential last-minute cancellations.</li>
-                <li>Triggers automated slot refill suggestions to other users.</li>
-                <li>Ensures courts are never left empty, optimizing utilization.</li>
-            </ul>
+        <div class="section">
+            <h2>4. Cancellation Prediction & Slot Backfilling</h2>
+            <p class="problem">Problem: Last-minute cancellations leave courts unused, reducing revenue and user satisfaction.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">What can be done?</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>AI predicts likely cancellations in advance.</li>
+                    <li>Automatically suggests available slots to other interested users.</li>
+                    <li>AI ensures higher utilization by predicting behaviors no manual method can foresee timely.</li>
+                </ul>
+            </div>
             <div class="flowchart"><img src="cancellation prediction.jpg" alt="Cancellation Management"></div>
         </div>
 
-        <div class="section"><h2>5. User Retention Programs with AI Insights</h2>
-            <ul>
-                <li>Machine learning identifies users likely to churn.</li>
-                <li>Generates personalized retention offers and engagement strategies.</li>
-                <li>Boosts customer loyalty and lifetime value.</li>
-            </ul>
+        <div class="section">
+            <h2>5. User Retention Programs with AI Insights</h2>
+            <p class="problem">Problem: User drop-off rates are high after a few games, making long-term retention difficult.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">What can be done?</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>AI analyzes user engagement patterns to predict churn risks.</li>
+                    <li>Personalized retention offers and re-engagement strategies are crafted automatically.</li>
+                    <li>AI provides scalable retention solutions that go beyond basic email campaigns.</li>
+                </ul>
+            </div>
             <div class="flowchart"><img src="customer_retention.jpg" alt="User Retention"></div>
         </div>
 
-        <div class="section"><h2>6. AI-driven Personalized Marketing</h2>
-            <ul>
-                <li>Tailors offers and communications based on user behavior and interests.</li>
-                <li>AI-powered recommendations for events, coaching, and courts.</li>
-                <li>Increases engagement through hyper-personalized campaigns.</li>
-            </ul>
+        <div class="section">
+            <h2>6. AI-driven Personalized Marketing</h2>
+            <p class="problem">Problem: Generic offers don't resonate with users, reducing the effectiveness of marketing efforts.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">What can be done?</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>AI personalizes marketing based on user behavior, preferences, and history.</li>
+                    <li>Hyper-targeted campaigns improve conversion rates and user satisfaction.</li>
+                    <li>AI allows large-scale, real-time personalized recommendations beyond traditional marketing capabilities.</li>
+                </ul>
+            </div>
             <div class="flowchart"><img src="personalised_marketing.jpg" alt="AI Marketing"></div>
         </div>
+
     </div>
+
+    <script>
+        function toggleDropdown(btn) {
+            const content = btn.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 </html>
